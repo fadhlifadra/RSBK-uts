@@ -16,12 +16,12 @@ Nama Lengkap:
 Tanggal Lahir: 
 <h:inputText value="#{employee1.name.lastName}" size="38"/>
 Jenis Kelamin:
-<h:selectOneRadio value="#{employee1.name.firstName}">
+<h:selectOneRadio value="#{employee1.name.firstName1}">
    	<f:selectItem itemValue="Laki-Laki" itemLabel="Laki-Laki" />
    	<f:selectItem itemValue="Perempuan" itemLabel="Perempuan" />
 </h:selectOneRadio>
 Alamat: 
-<h:inputTextarea value="#{employee1.name.lastName}" cols="30" rows="10" />
+<h:inputTextarea value="#{employee1.name.lastName1}" cols="30" rows="10" />
 
 Angkatan:
 <h:selectOneMenu value="#{employee1.company.business}">
@@ -36,9 +36,9 @@ Angkatan:
 NIM: 
 <h:inputText value="#{employee1.company.companyName}" size="38"/>
 IP Semester Lalu: 
-<h:inputText value="#{employee1.company.companyName}" size="38"/>
+<h:inputText value="#{employee1.company.companyName1}" size="38"/>
 IP Kumulatif: 
-<h:inputText value="#{employee1.company.business}" size="38"/>
+<h:inputText value="#{employee1.company.business1}" size="38"/>
 </h:panelGrid>
 <h:commandButton value="Process" 
                  action="#{employee1.processEmployee}"/>
