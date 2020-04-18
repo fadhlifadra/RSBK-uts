@@ -2,46 +2,17 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <h:head><title>Survei Akademik Mahasiswa Teknik Komputer Tahun Ajaran 2019/2020</title>
 <link href="./css/styles.css" rel="stylesheet" type="text/css"/> 
 </h:head>
 <h:body>
 <h1 class="title">Survei Akademik Mahasiswa Teknik Komputer</h1>
-<div align="center">
-<h:form>
-<h:panelGrid columns="2" styleClass="formTable">
-Nama Lengkap:
-<h:inputText value="#{employee1.name.firstName}" size="38"/>
-Tanggal Lahir: 
-<h:inputText value="#{employee1.name.lastName}" size="38"/>
-Jenis Kelamin:
-<h:selectOneRadio value="#{employee1.name.firstName1}">
-   	<f:selectItem itemValue="Laki-Laki" itemLabel="Laki-Laki" />
-   	<f:selectItem itemValue="Perempuan" itemLabel="Perempuan" />
-</h:selectOneRadio>
-Alamat: 
-<h:inputTextarea value="#{employee1.name.lastName1}" cols="30" rows="10" />
+<br/>
+<ul>
+  <li><a href="home.jsf">Menuju Survei</a><br/></li>
+</ul>
 
-Angkatan:
-<h:selectOneMenu value="#{employee1.company.business}">
-   	<f:selectItem itemValue="--Angkatan--" itemLabel="--Angkatan--" />
-   	<f:selectItem itemValue="2014" itemLabel="2014" />
-   	<f:selectItem itemValue="2015" itemLabel="2015" />
-   	<f:selectItem itemValue="2016" itemLabel="2016" />
-   	<f:selectItem itemValue="2017" itemLabel="2017" />
-   	<f:selectItem itemValue="2018" itemLabel="2018" />
-   	<f:selectItem itemValue="2019" itemLabel="2019" />
-</h:selectOneMenu>
-NIM: 
-<h:inputText value="#{employee1.company.companyName}" size="38"/>
-IP Semester Lalu: 
-<h:inputText value="#{employee1.company.companyName1}" size="38"/>
-IP Kumulatif: 
-<h:inputText value="#{employee1.company.business1}" size="38"/>
-</h:panelGrid>
-<h:commandButton value="Process" 
-                 action="#{employee1.processEmployee}"/>
-</h:form>
-</div>
+
+<ui:include src="/WEB-INF/snippets/training-course-ad.xhtml"/>
 </h:body></html>
