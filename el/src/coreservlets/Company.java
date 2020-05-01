@@ -1,13 +1,13 @@
 package coreservlets;
 
 public class Company {
-  private String companyName, business, companyName1, business1;
+  private String companyName, business, jk, kj;
 
-  public Company(String companyName, String business, String companyName1, String business1) {
+  public Company(String companyName, String business, String jk, String kj) {
     this.companyName = companyName;
     this.business = business;
-    this.companyName1 = companyName1;
-    this.business1 = business1;
+    this.jk = jk;
+    this.kj = kj;
   }
 
   public String getCompanyName() { 
@@ -26,19 +26,19 @@ public class Company {
     business = newBusiness;
   }
   
-  public String getCompanyName1() { 
-	  return(companyName1); 
+  public String getJk() { 
+	  return(jk); 
   }
 
-  public void setCompanyName1(String newCompanyName1) {
-    companyName1 = newCompanyName1;
+  public void setJk(String newjk) {
+    jk = newjk;
   }
 
-  public String getBusines1() { 
-	  return(business1); 
+  public String getKj() { 
+	  return(kj); 
   }
 
-  public void setBusiness1(String newBusiness1) {
-    business1 = newBusiness1;
+  public void setKj(String newkj) {
+    kj = newkj;
   }
 }
